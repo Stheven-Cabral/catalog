@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Nav />
     This is the my items page
   </div>
 </template>
