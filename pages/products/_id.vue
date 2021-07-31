@@ -7,9 +7,9 @@ The underscore in the file name allows you to insert any word or parameter you w
           <div class="info-box">
               <h1>{{ product.title }}</h1>
               <p class="snippet">{{ product.snippet }}</p>
-              <!-- <RentModal 
+              <RentModal 
                   :product="product"
-              /> -->
+              />
           </div>
         </div>
         <div class="whats-included-container">
@@ -35,10 +35,10 @@ The underscore in the file name allows you to insert any word or parameter you w
               {{ product.description }}
           </p>
         </div>
-        <!-- <Reviews /> -->
+        <Reviews />
     </div>
     <div v-else class="container padding">
-        Page not found
+        <PageNotFound />
     </div>
   </div>
 </template>

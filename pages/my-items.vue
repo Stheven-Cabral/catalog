@@ -1,15 +1,27 @@
 <template>
-  <div>
-    This is the my items page
-  </div>
+    <div class="container">
+        <MyItem 
+            v-for="rental in myRentals"
+            :key="rental.id"
+            :item="rental"
+        />
+    </div>
 </template>
 
 <script>
-  export default {
-    layout: 'no-nav'
-  }
+import { mapState } from 'vuex';
+    export default {
+        layout: "no-nav",
+        computed: {
+            ...mapState([
+                'myRentals'
+            ])
+        }
+    }
 </script>
 
 <style scoped>
-
+    .container {
+        padding: 5rem 0
+    }
 </style>
